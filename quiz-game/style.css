@@ -1,0 +1,274 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    background-color: #f5efe6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =========================
+   SCREENS
+========================= */
+
+.screen {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+
+
+/* =========================
+   START SCREEN
+========================= */
+
+#start-screen h1 {
+    color: #e86a33;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#start-screen p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+
+/* =========================
+   QUIZ HEADER
+========================= */
+
+.quiz-header {
+    margin-bottom: 2rem;
+}
+
+#question-text {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   ANSWERS
+========================= */
+
+.answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+
+/* IMPORTANT:
+   Answer buttons are NOT orange by default.
+*/
+
+.answers-btn {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+/* Answer button hover */
+
+.answers-btn:hover {
+    background-color: #eadbc8;
+    border-color: #dac0ae;
+}
+
+
+/* Correct answer */
+
+.answers-btn.correct {
+    background-color: #e6fff0;
+    border-color: #a3f0c4;
+    color: #28a745;
+}
+
+
+/* Incorrect answer */
+
+.answers-btn.incorrect {
+    background-color: #fff0f0;
+    border-color: #ffbdbd;
+    color: #dc3545;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+.progress-bar {
+    height: 10px;
+    background-color: #f8f0e5;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #e86a33;
+    transition: width 0.3s ease;
+}
+
+
+/* =========================
+   RESULT SCREEN
+========================= */
+
+#result-screen h1 {
+    color: #e86a33;
+    margin-bottom: 30px;
+}
+
+.result-info {
+    background-color: #f8f0e5;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.result-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#result-message {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e86a33;
+}
+
+
+/* =========================
+   MAIN ORANGE BUTTONS
+   Start Quiz / Restart Quiz
+========================= */
+
+button:not(.answers-btn) {
+    background-color: #e86a33;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+
+/* Orange button hover */
+
+button:not(.answers-btn):hover {
+    background-color: #d45b28;
+    transform: translateY(-1px);
+}
+
+
+/* Orange button click */
+
+button:not(.answers-btn):active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0.75rem;
+    }
+
+    .screen {
+        padding: 1rem;
+    }
+
+    #start-screen h1 {
+        font-size: 2rem;
+    }
+
+    #start-screen p {
+        font-size: 1rem;
+    }
+
+    #question-text {
+        font-size: 1.3rem;
+    }
+
+    .quiz-info {
+        font-size: 0.9rem;
+    }
+
+    .answers-btn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    button:not(.answers-btn) {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
