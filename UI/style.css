@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quantico", sans-serif;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main {
+    height: 90vh;
+    width: 90vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    background-color: #e3ddce;
+    border-radius: 30px;
+    border: 2px solid black;
+
+}
+#company {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+#logo {
+    margin-top: 3px;
+    margin-left: 20px;
+    height: 20px;
+}
+#company-name {
+    font-size: 26px;
+    font-weight: 900;
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn {
+    width: 110px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: transparent;
+}
+.btn:nth-child(2) {
+    margin-right: 15px;
+    border: 1px solid  black;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: rgb(233, 233, 166);
+}
+.btn:hover {
+    border: 1px solid  black;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: rgb(233, 233, 166);
+}
+.btn:active {
+    background-color: rgb(200, 200, 129);
+}
+#body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#left {
+    height: 100%;
+    width: 50%;
+}
+#right {
+    height: 100%;
+    width: 50%;
+}
+#lupper {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+#lbox1 {
+    height: 100%;
+    width: 50%;
+}
+#music {
+    height: 80%;
+    width: 95%;
+    border: 2px solid;
+    margin-top: 13%;
+    border-radius: 25px;
+}
+#lbox2-container {
+    height: 100%;
+    width: 50%;    
+}
+#lbox2-upper {
+    height: 15%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 18%;
+    margin-left: 20px;
+}
+#lbox2-lower {
+    height: 60%;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+#llower {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+#llbox1 {
+    height: 100%;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+#llbox2 {
+    height: 90%;
+    width: 8%;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#llbox3 {
+    height: 96%;
+    width: 42%;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+#body-heading {
+    height: 40%;
+    font-size: 55px;
+    width: 80%;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+#body-para {
+    font-size: 12px;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+#btn-container {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 10px;
+}
+#get-started {
+    padding: 13px 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    font-weight: 800;   
+    display: flex;
+    align-items: center;
+}
+#get-started i {
+    font-size: 20px;
+    margin-left: 30px;
+}
+#watch-video {
+    padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    background-color: #e3ddce;
+    border: 2px solid black;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+#watch-video i {
+    font-size: 15px;
+    margin-left: 30px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+#last-container {
+    margin-top: 50px;
+    margin-left: 30px;
+    height: 150px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+#last-box1 {
+    height: 100%;
+    width: 40%;
+    border: 2px solid ;
+    border-right: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#last-box2 {
+    height: 100%;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
