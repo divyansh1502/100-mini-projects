@@ -11,6 +11,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 #main {
     height: 90vh;
@@ -24,11 +25,12 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
     width: 100%;
     background-color: #e3ddce;
     border-radius: 30px;
     border: 2px solid black;
+    flex-shrink: 0;
 
 }
 #company {
@@ -51,6 +53,7 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 55px;
+    cursor: pointer;
 }
 li {
     list-style: none;
@@ -64,6 +67,7 @@ li {
     font-size: 14px;
     font-weight: 800;
     background-color: transparent;
+    cursor: pointer;
 }
 .btn:nth-child(2) {
     margin-right: 15px;
@@ -130,10 +134,12 @@ li {
     border-radius: 25px;
     margin-left: 20px;
     margin-top: 5%;
+    background-color: #e3ddce;
+    padding-left: 15px;
 }
 #llower {
     display: flex;
-    height: 50%;
+    height: 45%;
     width: 100%;
 }
 #llbox1 {
@@ -141,6 +147,7 @@ li {
     width: 40%;
     border: 2px solid black;
     border-radius: 25px;
+    background-color: #e3ddce;
 }
 #llbox2 {
     height: 90%;
@@ -149,6 +156,7 @@ li {
     border-radius: 25px;
     margin-top: 20px;
     margin-left: 10px;
+    
 }
 #llbox3 {
     height: 96%;
@@ -157,6 +165,7 @@ li {
     border-radius: 25px;
     margin-top: 13px;
     margin-left: 10px;
+    background-color: #e3ddce;
 }
 #body-heading {
     height: 40%;
@@ -198,19 +207,19 @@ li {
     margin-left: 30px;
 }
 #watch-video {
-    padding: 10px 40px;
+    padding: 10px 25px;
     border-radius: 25px;
     border: none;
     font-size: 18px;
     background-color: #e3ddce;
     border: 2px solid black;
-    font-weight: 800;
+    font-weight: 600;
     display: flex;
     align-items: center;
 }
 #watch-video i {
     font-size: 15px;
-    margin-left: 30px;
+    margin-left: 10px;
     padding: 5px;
     color: white;
     background-color: black;
@@ -219,7 +228,7 @@ li {
 #last-container {
     margin-top: 50px;
     margin-left: 30px;
-    height: 150px;
+    height: 140px;
     width: 100%;
     border: 2px solid black;
     border-radius: 20px;
@@ -237,6 +246,219 @@ li {
 #last-box2 {
     height: 100%;
     width: 60%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#music-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#music-head h1 {
+    font-size: 38px;
+    
+}
+#music-head i {
+    font-size: 26px;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 50%;
+    color: white;
+}
+#music p {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 800;
+}
+#music-box {
+    height: 55%;
+    width: 100%;
+    margin-top: 37px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#music-box img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    object-fit: cover;
+    border-top: 2px solid black;
+}
+#lbox2-upper img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    object-fit: cover;
+}
+#lbox2-lower img {
+    margin-top: 25px;
+    width: 60%;
+    border-radius: 1px;
+}
+#lbox2-lower h2 {
+    font-size: 22px;
+}
+#lbox2-lower p {
+    font-size: 10px;
+}
+#llbox1-head {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+#llbox1-head h2 {
+    width: 70%;
+    font-size: 28px;
+}
+#llbox1-head p {
+    padding: 6px 15px;
+    background-color: orangered;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 12px;
+    color: white;
+    font-weight: 800;
+}
+#llbox1-body {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+#llbox1-body p {
+    font-size: 12px;
+    width: 70%;
+}
+#llbox1-body h5 {
+    font-size: 24px;
+}
+#llbox1-box {
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    border-top: 2px solid black;
+}
+#llbox1-box img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+    border-top: 2px solid black;
+}
+#llbox2 img {
+    width: 100%;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+#llbox2-music {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#llbox3-head {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 85px
+}
+#llbox3-head h3 {
+    font-size: 26px;
+}
+#llbox3-head i {
+    font-size: 20px;
+    font-weight: 800;
+}
+#llbox3-imgBox {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#llbox3-imgBox img {
+    width: 55%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#llbox3 > h4 {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+#llbox3 > p {
+    margin-left: 25px;
+    font-size: 10px;
+    font-weight: 200;
+}
+#last-box1-head {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+#last-box1-head i {
+    color: orangered;
+    font-size: 20px;
+}
+#last-box1 > h2 {
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 3px;
+}
+#last-box1 > p {
+    font-size: 12px;
+    margin-left: 25px;
+    width: 90%;
+    margin-top: 3px;
+    line-height: 15px;
+}
+#last-box2-head {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+#last-box2-head i {
+    color: orangered;
+    font-size: 20px;
+}
+#last-box2 > h2 {
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 3px;
+}
+#last-box2 > p {
+    font-size: 12px;
+    margin-left: 25px;
+    width: 90%;
+    margin-top: 3px;
+    line-height: 15px;
+}
+#last-box2-head > h5 {
+    padding: 3px 15px;
+    background-color: transparent;
     border: 2px solid black;
     border-radius: 15px;
 }
